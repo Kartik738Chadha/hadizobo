@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartik</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(71, 67, 67);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: gray;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+
+      nav ul li a:hover {
+        color: rgb(222, 248, 77);
+        font-size: 1.03rem;
+      }
+
+      main hr {
+        border: 0;
+        background: rgb(218, 218, 218);
+        height: 1.2px;
+        margin: 60px 85px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2.4rem;
+        margin: 70px 0;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(204, 204, 204);
+      }
+      .text-gray {
+        color: rgb(250, 250, 250);
+      }
+      #element {
+        color: rgb(204, 204, 204);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 90vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        
+      }
+  
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+
+      .vertical-title {
+        margin: 40px;
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .vertical-desc {
+        margin: 30px;
+        font-size: 30px;
+      }
+      p {
+        margin: 20px;
+        font-size: 20px;
+      }
+      video {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="KL.png" alt="" height="82px" width="82px" />
+        <div class="left">Kartik's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="file:///home/dell/Desktop/css/InDex.html">Home</a></li>
+            <li><a href="file:///home/dell/Desktop/Kartik/0.html" target="_main">Book</a></li>
+            <li><a href="file:///home/dell/Desktop/Kartik/6.html" target="_main">AI</a></li>
+            <li><a href="file:///home/dell/Desktop/Kartik/2.html" target="_main">Game</a></li>
+            <li><a href="file:///home/dell/Desktop/Kartik/4.html" target="_main">Clock</a></li>
+            <li><a href="file:///home/dell/Desktop/css/12.html" target="_main">Travel</a></li>
+            <li><a href="file:///home/dell/Desktop/css/tcs.html" target="_maim">The Cool Stuff</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple"> Kartik</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="ty.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">
+            <h1 style="text-align: center;">Past Experience</h1>
+        </span>
+        <p style="text-align: center;">What all I have done till now in my field of programming.</p>
+            
+
+        <div class="box">
+          <div class="vertical">
+            
+            <div class="vertical-title">HTML Developer (2023-2024)</div>
+            <div class="vertical-desc">
+              I started coding when I was 10 years old. When I started learning I thought it would be very hard to but it became easy, I don't mean like Html became easier; Html beacme easy to learn for me and I could understand it even better. My First Website or a Webpage's video is given below.
+            </div>
+          </div>
+          <video width="800px" 
+           height="800px" 
+           controls="controls">
+        <source src="Kartik's Portfolio.mp4"
+                type="video/mp4" />
+    </video>
+          
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Programmer",
+          "Graphic Designer",
+          "Game Designer",
+          "Video Editor",
+          "Background Editor",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
